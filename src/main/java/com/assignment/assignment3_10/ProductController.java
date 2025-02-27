@@ -30,8 +30,8 @@ public class ProductController {
 
     @PostMapping("")
     public Product createProduct(@RequestBody Product product) {
-        logger.info("📦 --->Create a new product: " + product.getName());
         products.add(product);
+        logger.info("📦 --->Create a new product: " + product.getName());
         return product;
     }
 
